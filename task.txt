@@ -1,0 +1,31 @@
+User Model
+ ID
+ FullName
+ NickName
+ Photo
+ Birthday
+ Location
+ Created_at
+ Deleted_at
+ Updated_at
+ Created_by
+ Updated_by
+ Deleted_by
+user list data model
+ ID
+ Full Name
+ NickName
+ Photo
+ Birthday
+ Location
+Create User POST /api/v1/users
+Create Users POST /api/v1/users/multi
+Update User PUT /api/v1/users/:id
+Update Users PUT /api/v1/users/multi
+Delete User DELETE /api/v1/users/:id
+Delete Users DELETE /api/v1/users/multi
+Get User By ID GET /api/v1/users/:id
+Get User List  GET /api/v1/users
+Get User List . list should add user fields query' fields(created_at,updated_at)  GET /api/v1/users?fields=created_at,updated_at
+Sort User List . GET /api/v1/users?sort?full_name:asc,id:desc
+there are 3 layer in monolith . they are handler, service and repository.
